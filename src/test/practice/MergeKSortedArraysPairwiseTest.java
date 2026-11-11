@@ -5,6 +5,6 @@ public class MergeKSortedArraysPairwiseTest extends MergeKSortedArraysTest {
 
   @Override
   protected int[] mergeAll(int[][] arrays) {
-    return MergeKSortedArrays.mergeAllPairwise(arrays);
+    return MergeKSortedArraysPairwise.mergeAll(arrays);
   }
 }

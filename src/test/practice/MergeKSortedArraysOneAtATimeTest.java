@@ -5,6 +5,6 @@ public class MergeKSortedArraysOneAtATimeTest extends MergeKSortedArraysTest {
 
   @Override
   protected int[] mergeAll(int[][] arrays) {
-    return MergeKSortedArrays.mergeAllOneAtATime(arrays);
+    return MergeKSortedArraysOneAtATime.mergeAll(arrays);
   }
 }

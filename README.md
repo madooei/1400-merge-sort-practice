@@ -1,6 +1,6 @@
 # Merge Sort — Practice
 
-Two practice problems. `SortedUnion` takes the union of two sorted arrays, each with no duplicate values of its own, as a two-pointer walk like the merge. `MergeKSortedArrays` merges `k` sorted arrays into one, first one array at a time and then in pairs, recursively.
+Two practice problems. `SortedUnion` takes the union of two sorted arrays, each with no duplicate values of its own, as a two-pointer walk like the merge. The second problem merges `k` sorted arrays into one, first one array at a time (`MergeKSortedArraysOneAtATime`) and then in pairs, recursively (`MergeKSortedArraysPairwise`).
 
 ## Prerequisites
 
@@ -21,7 +21,8 @@ code/
         MergeTwoSortedArrays.java       # the two-array merge (copied from the chapter)
       practice/
         SortedUnion.java                # union of two sorted arrays
-        MergeKSortedArrays.java         # merge k sorted arrays (2 solutions)
+        MergeKSortedArraysOneAtATime.java  # merge k sorted arrays, one at a time
+        MergeKSortedArraysPairwise.java    # merge k sorted arrays, in pairs
     test/
       practice/
         SortedUnionTest.java
@@ -43,6 +44,7 @@ There is no demo program for these problems; the tests are how you check your wo
 
 - `practice.SortedUnion` — `union(arr1, arr2)`, which returns a new sorted array of every value in either input, each value once.
 - `practice.SortedUnionTest` — tests for `SortedUnion`.
-- `sorts.MergeTwoSortedArrays` — an unchanged copy from the chapter. `MergeKSortedArrays` calls its `merge`, so it is included here to keep this code self-contained.
-- `practice.MergeKSortedArrays` — `mergeAllOneAtATime`, which folds each array into a running result, and `mergeAllPairwise`, which splits the list of arrays in half and merges recursively.
+- `sorts.MergeTwoSortedArrays` — an unchanged copy from the chapter. Both merge k solutions call its `merge`, so it is included here to keep this code self-contained.
+- `practice.MergeKSortedArraysOneAtATime` — `mergeAll`, which folds each array into a running result.
+- `practice.MergeKSortedArraysPairwise` — `mergeAll`, which splits the list of arrays in half and merges recursively.
 - `practice.MergeKSortedArraysTest` — the abstract scenario suite for merging `k` arrays. It has one subclass per solution, `MergeKSortedArraysOneAtATimeTest` and `MergeKSortedArraysPairwiseTest`, so you can test one solution alone.
