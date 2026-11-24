@@ -44,7 +44,7 @@ code/
 - `scripts/test.sh practice.MergeKSortedArraysPairwiseTest` — compiles everything and runs only that test class. Use this while you are working on one problem or one solution and the others are still empty.
 - `scripts/run.sh demo.SortedUnionDemo` — compiles everything and runs that one demo. Every problem class has its own demo, `<Class>Demo`.
 
-## What's here
+## Contents
 
 - `practice.SortedUnion` — `union(arr1, arr2)`, which returns a new sorted array of every value in either input, each value once.
 - `practice.SortedUnionTest` — tests for `SortedUnion`.
