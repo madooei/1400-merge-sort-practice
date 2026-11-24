@@ -23,6 +23,10 @@ code/
         SortedUnion.java                # union of two sorted arrays
         MergeKSortedArraysOneAtATime.java  # merge k sorted arrays, one at a time
         MergeKSortedArraysPairwise.java    # merge k sorted arrays, in pairs
+      demo/                             # one demo per solution class
+        SortedUnionDemo.java
+        MergeKSortedArraysOneAtATimeDemo.java
+        MergeKSortedArraysPairwiseDemo.java
     test/
       practice/
         SortedUnionTest.java
@@ -31,14 +35,14 @@ code/
         MergeKSortedArraysPairwiseTest.java
   scripts/
     test.sh                             # compile and run every JUnit test
+    run.sh                              # compile and run one demo
 ```
 
 ## How to compile and run
 
 - `scripts/test.sh` — compiles everything and runs the full JUnit suite.
 - `scripts/test.sh practice.MergeKSortedArraysPairwiseTest` — compiles everything and runs only that test class. Use this while you are working on one problem or one solution and the others are still empty.
-
-There is no demo program for these problems; the tests are how you check your work.
+- `scripts/run.sh demo.SortedUnionDemo` — compiles everything and runs that one demo. Every problem class has its own demo, `<Class>Demo`.
 
 ## What's here
 
@@ -48,3 +52,4 @@ There is no demo program for these problems; the tests are how you check your wo
 - `practice.MergeKSortedArraysOneAtATime` — `mergeAll`, which folds each array into a running result.
 - `practice.MergeKSortedArraysPairwise` — `mergeAll`, which splits the list of arrays in half and merges recursively.
 - `practice.MergeKSortedArraysTest` — the abstract scenario suite for merging `k` arrays. It has one subclass per solution, `MergeKSortedArraysOneAtATimeTest` and `MergeKSortedArraysPairwiseTest`, so you can test one solution alone.
+- `demo.SortedUnionDemo`, `demo.MergeKSortedArraysOneAtATimeDemo`, and `demo.MergeKSortedArraysPairwiseDemo` — one demo per solution class, each on an example from the notes.
